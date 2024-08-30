@@ -2,9 +2,9 @@ import React from 'react'
 
 const verify = () => {
   return (
-    <div className="flex h-screen items-center justify-center">
-      <div className="w-full max-w-sm">
-        <h2 className="text-2xl font-bold mb-6 text-center">Verify Your Account</h2>
+    <div className="flex h-screen items-center justify-center ">
+      <div className="w-full max-w-sm p-8 bg-neutral-900 rounded-lg shadow-lg shadow-cyan-500/50 transform transition-transform hover:scale-105">
+        <h2 className="text-2xl font-bold mb-6 text-center  text-white">Verify Your Account</h2>
         <form>
           <div className="mb-4">
             <label className="block text-sm font-bold mb-2" htmlFor="code">
