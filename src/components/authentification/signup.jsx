@@ -1,0 +1,57 @@
+import React from 'react'
+
+const signup = () => {
+  return (
+    <div className="flex h-screen items-center justify-center">
+        <div className="w-full max-w-sm">
+        <h2 className="text-2xl font-bold mb-6 text-center">Sign Up</h2>
+        <form>
+          <div className="mb-4">
+            <label className="block text-sm font-bold mb-2" htmlFor="email">
+              Email
+            </label>
+            <input
+              className="w-full px-3 py-2 leading-tight text-neutral-900 border rounded shadow appearance-none focus:outline-none focus:shadow-outline"
+              id="email"
+              type="email"
+              placeholder="Enter your email"
+            />
+          </div>
+          <div className="mb-4">
+            <label className="block text-sm font-bold mb-2" htmlFor="password">
+              Password
+            </label>
+            <input
+              className="w-full px-3 py-2 mb-3 leading-tight text-neutral-900 border rounded shadow appearance-none focus:outline-none focus:shadow-outline"
+              id="password"
+              type="password"
+              placeholder="Create a password"
+            />
+          </div>
+          <div className="mb-6">
+            <label className="block text-sm font-bold mb-2" htmlFor="confirm-password">
+              Confirm Password
+            </label>
+            <input
+              className="w-full px-3 py-2 mb-3 leading-tight text-neutral-900 border rounded shadow appearance-none focus:outline-none focus:shadow-outline"
+              id="confirm-password"
+              type="password"
+              placeholder="Confirm your password"
+            />
+          </div>
+          <div className="flex items-center justify-between">
+            <button
+              className="w-full px-4 py-2 font-bold text-white bg-cyan-500 rounded hover:bg-cyan-700 focus:outline-none focus:shadow-outline"
+              type="button"
+            >
+              Sign Up
+            </button>
+          </div>
+        </form>
+      </div>
+      
+    </div>
+  )
+}
+
+export default signup
