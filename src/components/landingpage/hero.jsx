@@ -33,20 +33,20 @@ const Hero = () => {
             </div>
         </div>
         <button
-            className="w-1/12 l:w-24 mx-5 px-4 py-3 font-bold text-white bg-cyan-500 rounded hover:bg-cyan-700 focus:outline-none focus:shadow-outline"
+            className=" l:w-24 mx-5 px-4 py-3 font-bold text-white bg-cyan-500 rounded hover:bg-cyan-700 focus:outline-none focus:shadow-outline"
             type="button"
             onClick={handleSignUpClick}
         >
             Sign Up
         </button>
         <button
-            className="w-1/12 l:w-24 px-4 py-3 font-bold text-white bg-cyan-500 rounded hover:bg-cyan-700 focus:outline-none focus:shadow-outline"
+            className=" w-24 l:w-26 px-4 py-3 font-bold text-white bg-cyan-500 rounded hover:bg-cyan-700 focus:outline-none focus:shadow-outline"
             type="button"
             onClick={handleLoginClick}
         >
             Login
         </button>
-        <div className='w-1/2 mx-10 my-10 px-10 flex flexwrap items-center justify-center'>
+        <div className=' mx-10 my-10 px-10 flex flexwrap items-center justify-center'>
                 <div className='p-4 '>
                     <h3 className='text-2xl my-4 font-semibold mt- mb-6 text-white'>Instant Currency Conversion</h3>
                     <p className='text-lg text-neutral-300 mb-6'>
