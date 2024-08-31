@@ -57,7 +57,7 @@ const signup = () => {
             </button>
           </div>
           <div className="mt-4 text-center">
-            <Link to="/login" className="text-cyan-300 hover:underline hover:text-indigo-500  hover:text-transparent transition duration-300 ease-in-out">Already have an account? Login</Link>
+            <Link to="/login" className="text-cyan-300 hover:underline hover:text-indigo-500  transition duration-300 ease-in-out">Already have an account? Login</Link>
           </div>
         </form>
       </div>

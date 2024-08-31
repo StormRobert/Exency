@@ -5,6 +5,8 @@ import Signup from './components/authentification/signup';
 import Verify from './components/authentification/verify';
 import Updatepassword from './components/authentification/updatepassword';
 import Currencyconverter from './components/transaction&conversions/currencyconverter';
+import Landing from './components/landing';
+import Navbar from './components/navbar';
 
 
 const App = () => {
@@ -21,6 +23,8 @@ const App = () => {
       <Route path="/verify" element={< Verify />} />
       <Route path="/currencyconverter" element={< Currencyconverter />} />
       <Route path="/updatepassword" element={< Updatepassword />} />
+      <Route path="/" element={< Landing />} />
+      <Route path="/navbar" element={< Navbar />} />
 
     </Routes>
     </div>
