@@ -3,6 +3,7 @@ import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import Login from './components/authentification/login';
 import Signup from './components/authentification/signup';
 import Verify from './components/authentification/verify';
+import Currencyconverter from './components/transaction&conversions/currencyconverter';
 
 const App = () => {
   return (
@@ -16,6 +17,7 @@ const App = () => {
       <Route path="/login" element={< Login />} />
       <Route path="/signup" element={< Signup />} />
       <Route path="/verify" element={< Verify />} />
+      <Route path="/currencyconverter" element={< Currencyconverter />} />
 
     </Routes>
     </div>
