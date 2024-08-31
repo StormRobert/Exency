@@ -1,6 +1,15 @@
 import React from 'react'
+import { Link, useNavigate } from 'react-router-dom';
 
 const signup = () => {
+
+  const navigate = useNavigate();
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    navigate('/login');
+  };
+
   return (
     <div className="flex h-screen items-center justify-center">
         <div className="w-full max-w-sm p-8 bg-neutral-900 rounded-lg shadow-lg shadow-cyan-500/50 transform transition-transform hover:scale-105">
@@ -46,6 +55,9 @@ const signup = () => {
             >
               Sign Up
             </button>
+          </div>
+          <div className="mt-4 text-center">
+            <Link to="/login" className="text-cyan-300 hover:underline">Already have an account? Login</Link>
           </div>
         </form>
       </div>
