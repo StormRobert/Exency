@@ -7,6 +7,9 @@ import Updatepassword from './components/authentification/updatepassword';
 import Currencyconverter from './components/transaction&conversions/currencyconverter';
 import Landing from './components/landing';
 import Navbar from './components/navbar';
+import ConversionPage from './components/transaction&conversions/conversionPage';
+import ConnectWallets from './components/transaction&conversions/connectWallets';
+import BalancePage from './components/transaction&conversions/BalancePage';
 
 
 const App = () => {
@@ -25,6 +28,9 @@ const App = () => {
       <Route path="/updatepassword" element={< Updatepassword />} />
       <Route path="/" element={< Landing />} />
       <Route path="/navbar" element={< Navbar />} />
+      <Route path="/conversionpage" element={< ConversionPage />} />
+      <Route path="/connectwallets" element={< ConnectWallets />} />
+      <Route path="/balancepage" element={< BalancePage />} />
 
     </Routes>
     </div>

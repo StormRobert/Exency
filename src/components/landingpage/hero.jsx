@@ -35,6 +35,15 @@ const Hero = () => {
         >
             Sign Up
         </button>
+        <div className='w-full mx-10 my-10 px-10 flex items-center justify-center'>
+                <div className='p-4'>
+                    <h3 className='text-2xl font-semibold mb-4 text-white'>Instant Currency Conversion</h3>
+                    <p className='text-lg text-neutral-300 mb-6'>
+                        Experience hassle-free currency conversion with our intuitive tool. Easily convert between multiple currencies in real-time, and enjoy seamless transactions no matter where you are. Our currency converter ensures you get the best exchange rates with minimal fees, making it perfect for travelers and businesses alike.
+                    </p>
+                    <Currencyconverter />
+                </div>
+            </div>
     </div>
   )
 }
