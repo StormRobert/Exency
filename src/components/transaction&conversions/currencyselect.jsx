@@ -21,12 +21,15 @@ const currencyCodes = [
     "ZWL"
 ];
 
-const currencyselect = ({selectedCurrency }) => {
+const currencyselect = ({selectedCurrency, handleCurrency }) => {
     const countryCode = selectedCurrency.substring(0, 2) ;  
  return (
     <div className='flex items-center space-x-2'>
     <img  src={`https://flagsapi.com/${countryCode}/flat/64.png`} alt="Flag" className="w-8 h-8" />
-    <select value={selectedCurrency} className='w-full px-3 py-2 text-neutral-900 border border-neutral-700 rounded shadow focus:outline-none focus:shadow-outline focus:ring-2 focus:ring-cyan-500'>
+    <select 
+    onChange={handleCurrency}
+    value={selectedCurrency} 
+    className='hover:cursor-pointer w-full px-3 py-2 text-neutral-900 border border-neutral-700 rounded shadow focus:outline-none focus:shadow-outline focus:ring-2 focus:ring-cyan-500'>
         {currencyCodes.map(currency => (
           <option key={currency} value={currency}>{currency}</option>
         ))}
